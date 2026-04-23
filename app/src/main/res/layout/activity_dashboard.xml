@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Top Bar: Table Switcher + Add Button -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3366cc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="16dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="@android:color/white"
+                android:contentDescription="Back"
+                android:padding="12dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerTables"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:spinnerMode="dropdown"/>
+
+            <ImageButton
+                android:id="@+id/btnAddTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_input_add"
+                android:contentDescription="Add Table"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="@android:color/white"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Active Table Content -->
+    <LinearLayout
+        android:id="@+id/llActiveTableContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Left Column: Fixed Info -->
+        <ScrollView
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Info Card -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tvTableName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#3366cc"/>
+                    <TextView
+                        android:id="@+id/tvTableDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnEditTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:textSize="12sp"/>
+                
+                <!-- Fixed Header for Parts Column -->
+                <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:text="Parts"
+                     android:gravity="center_vertical"
+                     android:paddingStart="8dp"
+                     android:textStyle="bold"
+                     android:background="#EEE"/>
+
+                <!-- Part Names (Scrolls Vertically with Right Side? No)
+                     Problem: If Right Side is Horizontal Scroll View of a Vertical List,
+                     We need strictly synced Vertical Scroll.
+                     easier: The Right Side is HorizontalScroll -> Vertical List.
+                     The Left Side is Vertical List.
+                     They must sync scroll Y.
+                     Alternative:
+                     Use a single ScrollView (Vertical) as ROOT.
+                     Inside: Horizontal Layout [ LeftCol | HorzScroll(RightCol) ].
+                     This enables shared Vertical Scrolling.
+                 -->
+            </LinearLayout>
+        </ScrollView>
+       <!-- STOP. The Plan above is wrong for Fixed Left & Scrollable Matrix. -->
+       <!-- CORRECT LAYOUT:
+            Root: LinearLayout (Vertical)
+            Top: Table Selector (Done)
+            Content: RelativeLayout/Constraint?
+            
+            We want:
+            Header Row (Units) -> Scrolls Horizontally. Fixed Vertically.
+            Left Col (Parts) -> Scrolls Vertically. Fixed Horizontally.
+            Cells -> Scroll Both.
+            Corner (Info) -> Fixed Both.
+       -->
+    </LinearLayout>
+    
+    <!-- Redoing Content Area Layout below in code -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:backgroundTint="#3366cc"
+        app:tint="@android:color/white" />
+
+</LinearLayout>

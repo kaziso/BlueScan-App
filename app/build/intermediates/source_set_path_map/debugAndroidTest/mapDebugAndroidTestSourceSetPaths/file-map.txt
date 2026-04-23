@@ -1,0 +1,6 @@
+com.example.bluescan.test.app-androidTest-0 C:\SEMESTER 6\BLUESCAN\app\build\generated\res\resValues\androidTest\debug
+com.example.bluescan.test.app-mergeDebugAndroidTestResources-1 C:\SEMESTER 6\BLUESCAN\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.bluescan.test.app-mergeDebugAndroidTestResources-2 C:\SEMESTER 6\BLUESCAN\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.bluescan.test.app-debugAndroidTest-3 C:\SEMESTER 6\BLUESCAN\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.example.bluescan.test.app-jetified-annotation-experimental-1.3.1-4 C:\Users\ASUS\.gradle\caches\8.10.2\transforms\037fee21c1c39d854a9bec57f719035f\transformed\jetified-annotation-experimental-1.3.1\res
+com.example.bluescan.test.app-jetified-core-1.5.0-5 C:\Users\ASUS\.gradle\caches\8.10.2\transforms\5e2f73e2ec47f26764331bebb2a38c3c\transformed\jetified-core-1.5.0\res

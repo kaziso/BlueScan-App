@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/activity_dashboard.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/activity_scan.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/activity_scan.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/item_matrix_cell.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/item_matrix_cell.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/item_project.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/item_project.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/layout_active_table.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/layout_active_table.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/fragment_edit_project.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/fragment_edit_project.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/item_matrix_row.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/item_matrix_row.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/layout_barcode_selection.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/layout_barcode_selection.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/spinner_dropdown_premium.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/spinner_dropdown_premium.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/activity_folder_selection.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/activity_folder_selection.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/spinner_item_premium.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/spinner_item_premium.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/activity_welcome.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/item_barcode_selection.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/item_barcode_selection.xml"
+    },
+    {
+        "merged": "com.example.bluescan.app-mergeDebugResources-3:/layout/item_part_editor.xml",
+        "source": "com.example.bluescan.app-main-6:/layout/item_part_editor.xml"
+    }
+]

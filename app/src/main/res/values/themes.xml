@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BlueScan" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#3366cc</item>
+        <item name="colorPrimaryVariant">@color/bluescan_primary</item>
+        <item name="colorOnPrimary">@color/bluescan_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@android:color/white</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    
+    <style name="Theme.BlueScan.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
